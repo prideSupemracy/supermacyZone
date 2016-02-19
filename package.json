@@ -1,0 +1,25 @@
+{
+  "name": "kumar",
+  "version": "0.0.1",
+  "description": "My Learning progress",
+  "main": "index.js",
+  "dependencies": {
+    "bunyan": "^1.6.0",
+    "lodash": "^4.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start" : "nodemon lodash-tests/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prideSupemracy/supermacyZone.git"
+  },
+  "author": "Kumar Gaurav Mishra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prideSupemracy/supermacyZone/issues"
+  },
+  "homepage": "https://github.com/prideSupemracy/supermacyZone#readme"
+}
