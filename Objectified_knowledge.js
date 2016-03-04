@@ -74,3 +74,8 @@ var obj3 = Object.create(obj2, {
 console.log("--------------Object.create benifits----------------------", JSON.stringify(obj3.utils));
 console.log("--------------Object.create benifits----------------------", JSON.stringify(obj3.name));//The properties of obj2 also has enumerable : false value by default and also unchangable
 
+// Deleting a property from an object
+delete obj.name;
+console.log("===========after Deleting name from obj expected false ========================" , ("name" in obj)); // This works for only simple objects and not prototyped objects.
+delete obj3.empId;
+console.log("===========after Deleting empId from obj3 expected true because delete doesn't work with prototyped object ========================" , ("empId" in obj3));
