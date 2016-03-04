@@ -8,7 +8,7 @@ var _ = require('lodash'),
 			stream : process.stdout
 		},{
 			level : 'info',
-			path : './temp/prideS.log'
+			path : '../temp/prideS.log'
 		}]
 	});
 var obj = {
@@ -19,9 +19,9 @@ var obj = {
 	"possessions" : "1st Level lust and 2nd Level greed",
 	"address" : "Kaluyuga or Hell"
 };
-var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
- /*_.forOwn(obj,function(value,key){
+var arr = [1,2,3,4,5,6,7,8,9,0,29,142,0,22,10,11,12,13,14,15,16,17,18,19,20];
+ _.forOwn(obj,function(value,key){
  	logger.info(key ," : " , value);
- });*/
+ });
 
 logger.info(_.chunk(arr,2));
