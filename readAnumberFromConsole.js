@@ -22,3 +22,9 @@ process.stdin.on('data', (chunk) =>{
 	process.stdout.write("You have entered : " + +chunk + "\n");
 	process.exit();
 });
+
+//Another way to do this with continious values
+console.log("Please enter a number : ");
+process.stdin.on('data', (chunk) =>{
+	process.stdout.write("You have entered : " + +chunk + "\n");
+});
