@@ -9,7 +9,7 @@ var evnetuality = function(that){
 	//fire an event on an object. The event can be either
 	//a string containing the name of the event or an object
 	//containing a type property containing the name of the
-	//event. Handles registery by the 'on' method that match
+	//event. Handles registry by the 'on' method that match
 	//the event name will be invoked.
 	that.fire = function(event){
 		var array , 
@@ -19,7 +19,7 @@ var evnetuality = function(that){
 			type = typeof event === 'string' ? event : event.type;
 		//If an array of the handlers exist for this event, then
 		//loop through it and execute the handlers in orders.
-		if(registery.hasOwnProperty(type)){
+		if(registry.hasOwnProperty(type)){
 			array = registry[type];
 			for(i = 0; i < array.length; i += 1){
 				handler = array[i];
@@ -55,4 +55,4 @@ var evnetuality = function(that){
 	return that;
 };
 
-evnetuality(that);
+//evnetuality(that);
